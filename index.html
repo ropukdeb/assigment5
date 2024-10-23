@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="lexend mx-8 my-4 ">
-        <nav class="bg-[#F9F7F3]  ">
+        <nav  class="bg-[#F9F7F3] ">
             <div class="flex justify-between navbar h-auto">
                 <div class="">
                     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Blog</button>
@@ -37,33 +37,30 @@
 
         <!-- Donation & History -->
         <div class="flex  justify-center gap-4 my-4 mt-28">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donattion</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+            <button id="show-donation-form" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+            <button id="show-history-form" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
         </div>
 
-
+        
+        <!-- history page -->
+        <div id="history-form " >
+          <h1>history</h1>
+         </div>
 
 
         <!-- Action for Donation -->
-        
-       
-
-
-
-
-            <!--  -->
-            <div class="card lg:card-side bg-base-100 shadow-sm border-2 px-4 py-4 mt-10">
+      <div id="donation-page">
+         <div class="card lg:card-side bg-base-100 shadow-sm border-2 px-4 py-4 mt-10">
                 <img class="" src="assets/noakhali.png" alt="Album" />
                 <div class="card-body gap-4">
+
                   <!-- Noakhali Donate Amount -->
                   <div class="flex flex-row gap-1 w-28 px-4 py-2 rounded-xl bg-gray-100">
-                    <div>
-                      <img src="assets/coin.png" alt="">
+                    <div class="flex flex-row">
+                      <img  src="assets/coin.png" alt="">
+                      <div class="flex flex-row justify-center items-center"><span id="donation-amount-noakhali">00</span> BDT</div>
                     </div>
-                    <div>00</div>
-                    <div>
-                      <h3>BDT</h3>
-                    </div>
+                    
                   </div>
                   <h2 class="card-title mt-4">Donate for Flood at Noakhali, Bangladesh</h2>
                   <p class="w-10/12">
@@ -73,8 +70,8 @@
                     efforts and making a positive impact on the lives of those in need.
                   </p>
                   <div class="card-actions flex flex-col gap-4">
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button class="btn btn-block bg-[#B4F461]">Donate Now</button>
+                    <input id="donate-noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                    <button id="donate-noakhali-btn" class="btn btn-block bg-[#B4F461]">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -89,19 +86,17 @@
 
               <!--Feni Donat Amount  -->  
               <div class="flex flex-row  gap-1 w-28 px-4 py-2 rounded-xl bg-[#1111110D]  ">
-                  <div>
+                  <div class="flex flex-row justify-center items-center">
                       <img  src="assets/coin.png" alt="">
+                      <div class="flex flex-row justify-center items-center"><span id="donation-amount-feni">00</span> BDT</div>
                   </div> 
-                  <div >00</div>
-                  <div>
-                      <h3>BDT</h3>
-                  </div>
+                  
                 </div>
           <h2 class="card-title mt-4">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="w-10/12">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                  <div class="card-actions flex flex-col gap-4 ">
-                      <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                          <button class="btn btn-block bg-[#B4F461]">Donate Now</button>
+                      <input id="donate-feni-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                          <button id="donate-feni-btn" class="btn btn-block bg-[#B4F461]">Donate Now</button>
                       </div>
                      </div>
                     </div>
@@ -115,24 +110,27 @@
 
               <!--the Quota Movement Donat Amount  -->  
               <div class="flex flex-row  gap-1 w-28 px-4 py-2 rounded-xl bg-[#1111110D]  ">
-                  <div>
-                      <img  src="assets/coin.png" alt="">
+                  <div class="flex flex-row">
+                    <img  src="assets/coin.png" alt="">
+                    <div class="flex flex-row justify-center items-center"><span id="donation-amount-quota">00</span> BDT</div>
                   </div> 
-                  <div >00</div>
-                  <div>
-                      <h3>BDT</h3>
-                  </div>
+                  
                 </div>
           <h2 class="card-title mt-4">Aid for Injured in the Quota Movement</h2>
                 <p class="w-10/12">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                  <div class="card-actions flex flex-col gap-4 ">
-                      <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                          <button class="btn btn-block bg-[#B4F461] ">Donate Now</button>
+                      <input id="donation-quota-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                          <button id="donation-quota-btn" class="btn btn-block bg-[#B4F461] ">Donate Now</button>
                       </div>
                      </div>
                     </div>
-         
+        </div>
 
+                  
+
+<script src="js/index.js"></script>
+<script src="js/donate.js"></script>
+<script src="js/utlity.js"></script>
 </body>
 </html>
 
